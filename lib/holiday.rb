@@ -11,26 +11,25 @@ def second_supply_for_fourth_of_july(holiday_hash)
     end
   end
 
-end
   # given that holiday_hash looks like this:
-  h = {
-    :winter => {
-      :christmas => ["Lights", "Wreath"],
-      :new_years => ["Party Hats"]
-    },
-    :summer => {
-      :fourth_of_july => ["Fireworks", "BBQ"]
-    },
-    :fall => {
-      :thanksgiving => ["Turkey"]
-    },
-    :spring => {
-      :memorial_day => ["BBQ"]
-    }
-  }
+  # h = {
+  #   :winter => {
+  #     :christmas => ["Lights", "Wreath"],
+  #     :new_years => ["Party Hats"]
+  #   },
+  #   :summer => {
+  #     :fourth_of_july => ["Fireworks", "BBQ"]
+  #   },
+  #   :fall => {
+  #     :thanksgiving => ["Turkey"]
+  #   },
+  #   :spring => {
+  #     :memorial_day => ["BBQ"]
+  #   }
+  # }
   # return the second element in the 4th of July array
-# end
- p second_supply_for_fourth_of_july(h)
+end
+
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
   # holiday_hash is identical to the one above
