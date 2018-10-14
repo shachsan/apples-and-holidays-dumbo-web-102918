@@ -1,9 +1,10 @@
 require 'pry'
 
 def second_supply_for_fourth_of_july(holiday_hash)
-  holiday_hash.select do |k, v|
+  fourth = holiday_hash.select do |k, v|
     k == :fourth_of_july
   end
+  fourth 
 end
   # given that holiday_hash looks like this:
   h = {
