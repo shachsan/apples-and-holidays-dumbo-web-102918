@@ -1,7 +1,7 @@
 require 'pry'
 
 def second_supply_for_fourth_of_july(holiday_hash)
-  return holiday_hash.dig(:summer, :fourth_of_july)
+  return holiday_hash.dig(:summer, :fourth_of_july, [1])
   # given that holiday_hash looks like this:
   # {
   #   :winter => {
