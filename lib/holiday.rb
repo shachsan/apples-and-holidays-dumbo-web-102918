@@ -1,16 +1,16 @@
 require 'pry'
 
 def second_supply_for_fourth_of_july(holiday_hash)
-  fourth_supply = nil
+
   holiday_hash.each do |season, supplies|
     supplies.each do |holiday, sup_list|
       if holiday == :fourth_of_july
         return sup_list.at(1)
-      end 
-      
-    end 
+      end
+
+    end
   end
-  fourth_supply
+
 end
   # given that holiday_hash looks like this:
   h = {
