@@ -91,7 +91,14 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holidays |
     puts "#{season.to_s.capitalize}:"
     holidays.each do |holiday, supplies|
-    puts "  #{holiday.to_s.capitalize}: #{supplies.join(', ')}"
+      formatted_holiday = ""
+      holiday.to_s.each_char.with_index do |ch, i|
+        if ch == '_'
+          formatted_holiday = holiday[0...i].capitalize+" "+holiday[i+1..-1].capitalize
+        end
+      end
+
+      puts "  #{formatted_holiday}: #{supplies.join(', ')}"
     end
   end
 end
