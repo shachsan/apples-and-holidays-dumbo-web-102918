@@ -99,6 +99,10 @@ def all_supplies_in_holidays(holiday_hash)
           formatted_holiday << holiday[j...i].capitalize
           j=i+1
         end
+
+        if i == holiday.size-1
+          formatted_holiday << holiday[j..i].capitalize
+        end 
       end
 
       puts "  #{formatted_holiday.join(" ")}: #{supplies.join(', ')}"
