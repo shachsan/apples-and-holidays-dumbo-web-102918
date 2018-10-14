@@ -92,13 +92,16 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.to_s.capitalize}:"
     holidays.each do |holiday, supplies|
       formatted_holiday = []
+      j=0
       holiday.to_s.each_char.with_index do |ch, i|
+
         if ch == '_'
-          formatted_holiday = holiday[0...i].capitalize+" "+holiday[i+1..-1].capitalize
+          formatted_holiday << holiday[j...i].capitalize
+          j=i+1
         end
       end
 
-      puts "  #{formatted_holiday}: #{supplies.join(', ')}"
+      puts "  #{formatted_holiday.join(" ")}: #{supplies.join(', ')}"
     end
   end
 end
