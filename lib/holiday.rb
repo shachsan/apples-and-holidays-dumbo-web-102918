@@ -118,10 +118,10 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, holiday_name_supplies|
       holiday_name_supplies.each do |holiday, sup|
         if sup.include?("BBQ")
-          bbq << sup.to_sym
+          bbq << sup
         end
       end
 
   end
-  bbq 
+  bbq
 end
